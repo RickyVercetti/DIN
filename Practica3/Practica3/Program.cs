@@ -8,6 +8,9 @@ namespace Practica3 {
     class Program {
         static void Main(string[] args) {
 
+            SinonimoArray array = new SinonimoArray();
+
+            array.add("amor", "cariño");
             
         }
     }

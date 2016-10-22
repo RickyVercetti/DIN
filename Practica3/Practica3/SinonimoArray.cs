@@ -41,7 +41,22 @@ namespace Practica3
         }
         public void search(String texto)
         {
-
+            foreach (String[] sinonimoEnArray in arraySinonimos)
+            {
+                if (Array.IndexOf(sinonimoEnArray,texto)<0)
+                {
+                    Console.WriteLine("Encontrado sinonimos!");
+                    //Significa que lo ha encontrado en ese Array
+                    if (sinonimoEnArray.Equals(texto))
+                    {
+                        Console.WriteLine(" '-' ");
+                    }
+                    else
+                    {
+                        Console.WriteLine(sinonimoEnArray);
+                    }
+                }
+            }
         }
     }
 }
