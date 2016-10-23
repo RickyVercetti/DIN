@@ -19,7 +19,7 @@ namespace Practica3
 
         public void add(params String[] nuevoSinonimos)
         {
-
+            
             foreach(String nuevoSinonimo in nuevoSinonimos)
             {
 
@@ -28,7 +28,9 @@ namespace Practica3
 
                     if(Array.IndexOf(palabra, nuevoSinonimo) < 0)
                     {
+                        //Da menor que 0 al no haber coincidencia, ahora falta añadirlo a la lista
                         Array.Resize(ref arraySinonimos, arraySinonimos.Length + 1);
+                        arraySinonimos[arraySinonimos.Length - 1][0]= palabra;
 
                     }
                     else
@@ -49,12 +51,19 @@ namespace Practica3
                     //Significa que lo ha encontrado en ese Array
                     if (sinonimoEnArray.Equals(texto))
                     {
-                        Console.WriteLine(" '-' ");
+                        Console.WriteLine(" '-' "); //Se hace para que no aparezca la palabra introducida en la lista de sinonimos
                     }
                     else
                     {
-                        Console.WriteLine(sinonimoEnArray);
+                        Console.WriteLine(sinonimoEnArray); //mostraria todos los sinonimos
                     }
+                }
+                else
+                {
+                    Console.WriteLine("No se han encontrado sinonimos!");
+                    Array.Resize(ref arraySinonimos, arraySinonimos.Length + 1);
+                    //lo añadimos
+                    Console.WriteLine("Añadido!");
                 }
             }
         }

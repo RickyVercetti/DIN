@@ -11,7 +11,8 @@ namespace Practica3 {
             SinonimoArray array = new SinonimoArray();
 
             array.add("amor", "cariño");
-            
+            array.search("amor");
+            array.search("malo");
         }
     }
 }
