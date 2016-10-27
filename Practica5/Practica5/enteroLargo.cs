@@ -1,4 +1,6 @@
-﻿namespace Practica5
+﻿using System;
+
+namespace Practica5
 {
     internal class enteroLargo
     {
@@ -16,9 +18,14 @@
         {
             return numero;
         }
+        public int getLongitud()
+        {
+            return longitud;
+        }
         public static enteroLargo operator +(enteroLargo num1, enteroLargo num2)
         {
             int n1, n2;
+            bool mayor10;
 
             //Si num2 es mayor
             if (num1.longitud < num2.longitud)
@@ -36,7 +43,13 @@
                 {
                     n1 = int.Parse(num1.numero[i].ToString());
                     n2 = int.Parse(num2.numero[i].ToString());
-                    sumanum = sumanum + n1 + n2;
+                    if (n1+n2>9)
+                    {
+                        if (mayor10==true)
+                        sumanum += n1 + n2;
+                    }
+                    
+                    Console.WriteLine(sumanum);
                 }
                 string suma = sumanum.ToString();
                 enteroLargo C = new enteroLargo(suma);
@@ -46,7 +59,7 @@
             else
             {
                 int dif = num1.longitud - num2.longitud;
-                //Ahora num1 lo hacemos del mismo tamaño
+                //Ahora num2 lo hacemos del mismo tamaño
                 for (int i = 0; i < dif; i++)
                 {
                     num2.numero = "0" + num2.numero;
@@ -57,7 +70,8 @@
                 {
                     n1 = int.Parse(num1.numero[i].ToString());
                     n2 = int.Parse(num2.numero[i].ToString());
-                    sumanum = sumanum + n1 + n2;
+                    sumanum = sumanum + (n1 + n2);
+                    Console.WriteLine(sumanum);
                 }
                 string suma = sumanum.ToString();
                 enteroLargo C = new enteroLargo(suma);
