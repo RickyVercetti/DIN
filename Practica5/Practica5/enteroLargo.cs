@@ -71,8 +71,10 @@ namespace Practica5
                     n1 = int.Parse(num1.numero[i].ToString());
                     n2 = int.Parse(num2.numero[i].ToString());
                     sumanum = n1 + n2 + acarreo;
+                    Console.WriteLine(n1 + " + " + n2);
                     acarreo = sumanum / 10;
                     digito = sumanum % 10;
+                    Console.WriteLine(acarreo + " - " + digito);
                     cadena = digito + cadena;
                 }
                 string suma = sumanum.ToString();
