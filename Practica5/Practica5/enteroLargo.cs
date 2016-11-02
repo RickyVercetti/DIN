@@ -49,9 +49,17 @@ namespace Practica5
                     sumanum = n1 + n2 + acarreo;
                     acarreo = sumanum / 10;
                     digito = sumanum % 10;
-                    cadena = digito + cadena;
+                    if (i==0)
+                    {
+                        cadena = int.Parse(sumanum.ToString()) + cadena;
+                    }
+                    else
+                    {
+                        cadena = int.Parse(digito.ToString()) + cadena;
+                    }
+                    //Console.WriteLine("Bingo!"+cadena);
                 }
-
+                
                 enteroLargo C = new enteroLargo(cadena);
                 return C;                                                
             }
@@ -71,14 +79,26 @@ namespace Practica5
                     n1 = int.Parse(num1.numero[i].ToString());
                     n2 = int.Parse(num2.numero[i].ToString());
                     sumanum = n1 + n2 + acarreo;
-                    Console.WriteLine(n1 + " + " + n2);
+                    //Console.WriteLine(n1 + " + " + n2);
                     acarreo = sumanum / 10;
                     digito = sumanum % 10;
-                    Console.WriteLine(acarreo + " - " + digito);
-                    cadena = digito + cadena;
+                    //Console.WriteLine(acarreo + " - " + digito);
+
+                    if (i == 0)
+                    {
+                        cadena = int.Parse(sumanum.ToString()) + cadena;
+                    }
+                    else
+                    {
+                        cadena = int.Parse(digito.ToString()) + cadena;
+                    }
+
+
+                    //cadena = int.Parse(digito.ToString()) + cadena;
+                    //Console.WriteLine("Bingo!"+cadena);
                 }
-                string suma = sumanum.ToString();
-                enteroLargo C = new enteroLargo(suma);
+                //string suma = sumanum.ToString();
+                enteroLargo C = new enteroLargo(cadena);
                 return C;
             }
         }
