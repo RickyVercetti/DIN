@@ -16,15 +16,16 @@ namespace Calculadora
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Button(object sender, EventArgs e)
         {
-
+            Button boton = (Button)sender;
+            BOX.Text += boton.Text;
         }
     }
 }

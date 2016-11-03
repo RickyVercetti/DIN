@@ -33,7 +33,7 @@
             this.BTN1 = new System.Windows.Forms.Button();
             this.BTN2 = new System.Windows.Forms.Button();
             this.BTN3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BTN4 = new System.Windows.Forms.Button();
             this.BTN5 = new System.Windows.Forms.Button();
             this.BTN6 = new System.Windows.Forms.Button();
             this.BTN7 = new System.Windows.Forms.Button();
@@ -52,9 +52,11 @@
             // BOX
             // 
             this.BOX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BOX.Font = new System.Drawing.Font("OpenSymbol", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BOX.Location = new System.Drawing.Point(2, 3);
             this.BOX.Multiline = true;
             this.BOX.Name = "BOX";
+            this.BOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BOX.Size = new System.Drawing.Size(306, 82);
             this.BOX.TabIndex = 0;
             // 
@@ -70,7 +72,7 @@
             this.BTN0.TabIndex = 1;
             this.BTN0.Text = "0";
             this.BTN0.UseVisualStyleBackColor = false;
-            this.BTN0.Click += new System.EventHandler(this.button1_Click);
+            this.BTN0.Click += new System.EventHandler(this.Button);
             // 
             // BTN1
             // 
@@ -83,6 +85,7 @@
             this.BTN1.TabIndex = 2;
             this.BTN1.Text = "1";
             this.BTN1.UseVisualStyleBackColor = false;
+            this.BTN1.Click += new System.EventHandler(this.Button);
             // 
             // BTN2
             // 
@@ -95,6 +98,7 @@
             this.BTN2.TabIndex = 3;
             this.BTN2.Text = "2";
             this.BTN2.UseVisualStyleBackColor = false;
+            this.BTN2.Click += new System.EventHandler(this.Button);
             // 
             // BTN3
             // 
@@ -107,18 +111,20 @@
             this.BTN3.TabIndex = 4;
             this.BTN3.Text = "3";
             this.BTN3.UseVisualStyleBackColor = false;
+            this.BTN3.Click += new System.EventHandler(this.Button);
             // 
-            // button5
+            // BTN4
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(2, 219);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(72, 62);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "4";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BTN4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN4.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN4.Location = new System.Drawing.Point(2, 219);
+            this.BTN4.Name = "BTN4";
+            this.BTN4.Size = new System.Drawing.Size(72, 62);
+            this.BTN4.TabIndex = 5;
+            this.BTN4.Text = "4";
+            this.BTN4.UseVisualStyleBackColor = false;
+            this.BTN4.Click += new System.EventHandler(this.Button);
             // 
             // BTN5
             // 
@@ -131,6 +137,7 @@
             this.BTN5.TabIndex = 6;
             this.BTN5.Text = "5";
             this.BTN5.UseVisualStyleBackColor = false;
+            this.BTN5.Click += new System.EventHandler(this.Button);
             // 
             // BTN6
             // 
@@ -143,6 +150,7 @@
             this.BTN6.TabIndex = 7;
             this.BTN6.Text = "6";
             this.BTN6.UseVisualStyleBackColor = false;
+            this.BTN6.Click += new System.EventHandler(this.Button);
             // 
             // BTN7
             // 
@@ -155,6 +163,7 @@
             this.BTN7.TabIndex = 8;
             this.BTN7.Text = "7";
             this.BTN7.UseVisualStyleBackColor = false;
+            this.BTN7.Click += new System.EventHandler(this.Button);
             // 
             // BTN8
             // 
@@ -167,6 +176,7 @@
             this.BTN8.TabIndex = 9;
             this.BTN8.Text = "8";
             this.BTN8.UseVisualStyleBackColor = false;
+            this.BTN8.Click += new System.EventHandler(this.Button);
             // 
             // BTN9
             // 
@@ -179,6 +189,7 @@
             this.BTN9.TabIndex = 10;
             this.BTN9.Text = "9";
             this.BTN9.UseVisualStyleBackColor = false;
+            this.BTN9.Click += new System.EventHandler(this.Button);
             // 
             // BTNchange
             // 
@@ -297,7 +308,7 @@
             this.Controls.Add(this.BTN7);
             this.Controls.Add(this.BTN6);
             this.Controls.Add(this.BTN5);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BTN4);
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
@@ -319,7 +330,7 @@
         private System.Windows.Forms.Button BTN1;
         private System.Windows.Forms.Button BTN2;
         private System.Windows.Forms.Button BTN3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BTN4;
         private System.Windows.Forms.Button BTN5;
         private System.Windows.Forms.Button BTN6;
         private System.Windows.Forms.Button BTN7;
