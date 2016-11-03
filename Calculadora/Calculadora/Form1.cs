@@ -27,5 +27,10 @@ namespace Calculadora
             Button boton = (Button)sender;
             BOX.Text += boton.Text;
         }
+        public void BorrarTexto(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            //BOX.Text(0);
+        }
     }
 }

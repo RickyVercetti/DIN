@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BOX = new System.Windows.Forms.TextBox();
             this.BTN0 = new System.Windows.Forms.Button();
             this.BTN1 = new System.Windows.Forms.Button();
@@ -315,6 +316,7 @@
             this.Controls.Add(this.BTN0);
             this.Controls.Add(this.BOX);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
