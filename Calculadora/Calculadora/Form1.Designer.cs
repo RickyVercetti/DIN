@@ -57,6 +57,7 @@
             this.BOX.Location = new System.Drawing.Point(2, 3);
             this.BOX.Multiline = true;
             this.BOX.Name = "BOX";
+            this.BOX.ReadOnly = true;
             this.BOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BOX.Size = new System.Drawing.Size(306, 82);
             this.BOX.TabIndex = 0;
@@ -194,10 +195,10 @@
             // 
             // BTNchange
             // 
-            this.BTNchange.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BTNchange.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BTNchange.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BTNchange.FlatAppearance.BorderSize = 0;
-            this.BTNchange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNchange.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNchange.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNchange.Location = new System.Drawing.Point(2, 353);
             this.BTNchange.Name = "BTNchange";
@@ -205,10 +206,11 @@
             this.BTNchange.TabIndex = 11;
             this.BTNchange.Text = "+/-";
             this.BTNchange.UseVisualStyleBackColor = false;
+            this.BTNchange.Click += new System.EventHandler(this.Button);
             // 
             // BTNequ
             // 
-            this.BTNequ.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BTNequ.BackColor = System.Drawing.Color.MediumAquamarine;
             this.BTNequ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNequ.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNequ.Location = new System.Drawing.Point(236, 287);
@@ -220,7 +222,7 @@
             // 
             // BTNmas
             // 
-            this.BTNmas.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BTNmas.BackColor = System.Drawing.Color.SkyBlue;
             this.BTNmas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNmas.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNmas.Location = new System.Drawing.Point(236, 151);
@@ -232,7 +234,7 @@
             // 
             // BTNmen
             // 
-            this.BTNmen.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BTNmen.BackColor = System.Drawing.Color.SkyBlue;
             this.BTNmen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNmen.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNmen.Location = new System.Drawing.Point(236, 91);
@@ -244,7 +246,7 @@
             // 
             // BTNmul
             // 
-            this.BTNmul.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BTNmul.BackColor = System.Drawing.Color.SkyBlue;
             this.BTNmul.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNmul.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNmul.Location = new System.Drawing.Point(158, 91);
@@ -256,7 +258,7 @@
             // 
             // BTNdiv
             // 
-            this.BTNdiv.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BTNdiv.BackColor = System.Drawing.Color.SkyBlue;
             this.BTNdiv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNdiv.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNdiv.Location = new System.Drawing.Point(80, 91);
@@ -277,10 +279,11 @@
             this.BTNC.TabIndex = 17;
             this.BTNC.Text = "C";
             this.BTNC.UseVisualStyleBackColor = false;
+            this.BTNC.Click += new System.EventHandler(this.BorrarTexto);
             // 
             // BTNdot
             // 
-            this.BTNdot.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BTNdot.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BTNdot.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNdot.Font = new System.Drawing.Font("OpenSymbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNdot.Location = new System.Drawing.Point(158, 353);
@@ -289,6 +292,7 @@
             this.BTNdot.TabIndex = 18;
             this.BTNdot.Text = ".";
             this.BTNdot.UseVisualStyleBackColor = false;
+            this.BTNdot.Click += new System.EventHandler(this.Button);
             // 
             // Form1
             // 
