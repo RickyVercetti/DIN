@@ -12,7 +12,7 @@ namespace Calculadora
 {
     public partial class Form1 : Form
     {
-        private int num1 = 0, num2 = 0;
+        private double num1 = 0, num2 = 0;
         private bool introducir;
         private char operacion;
         public Form1()
@@ -40,7 +40,7 @@ namespace Calculadora
         }
         public void Operaciones(Object sender, EventArgs e)
         {
-
+            num1 = (double) BOX.Text;
         }
     }
 }
