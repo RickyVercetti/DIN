@@ -19,14 +19,25 @@ namespace RadioButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked==true)
+            DialogResult dr = DialogResult.None;
+            if (radioButton1.Checked)
             {
-                MessageBox.Show("Seguro que quiere destruir el mundo?","Si o No", MessageBoxButtons.YesNo);
+               dr = MessageBox.Show("Seguro que quiere destruir el mundo?","Si o No", MessageBoxButtons.YesNo);
             }
-            if (radioButton2.Checked==true)
+            else if (radioButton2.Checked)
             {
-                MessageBox.Show("Quieres acabar con el cambio climatico?","Ahora puedes Cancelar",MessageBoxButtons.YesNoCancel);
+               dr = MessageBox.Show("Quieres acabar con el cambio climatico?","Ahora puedes Cancelar",MessageBoxButtons.YesNoCancel);
             }
+            else if (radioButton3.Checked)
+            {
+               dr = MessageBox.Show("Tu voto a fallado, ¿Quieres reintentarlo?", "¿Reintentar?", MessageBoxButtons.RetryCancel);
+            }
+            textBox1.Text = dr.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
