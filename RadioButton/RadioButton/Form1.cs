@@ -34,10 +34,5 @@ namespace RadioButton
             }
             textBox1.Text = dr.ToString();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

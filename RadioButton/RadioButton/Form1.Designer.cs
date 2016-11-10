@@ -37,7 +37,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(197, 118);
+            this.textBox1.Location = new System.Drawing.Point(201, 100);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
@@ -45,7 +45,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 53);
+            this.radioButton1.Location = new System.Drawing.Point(30, 35);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(59, 17);
             this.radioButton1.TabIndex = 1;
@@ -56,7 +56,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 87);
+            this.radioButton2.Location = new System.Drawing.Point(30, 69);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(112, 17);
             this.radioButton2.TabIndex = 2;
@@ -67,7 +67,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(26, 121);
+            this.radioButton3.Location = new System.Drawing.Point(30, 103);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(127, 17);
             this.radioButton3.TabIndex = 3;
@@ -77,11 +77,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(208, 53);
+            this.button1.Location = new System.Drawing.Point(212, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
+            this.button1.Text = "Pulse aquí";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -96,7 +96,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Radio Button";
             this.ResumeLayout(false);
             this.PerformLayout();
 
