@@ -41,20 +41,47 @@ namespace WindowsFormsApplication1
 
             MySqlCommand cmd;
             conex.Open();
-           
-                cmd = conex.CreateCommand();
-                cmd.CommandText = "Select * from cliente where id =" + TBClient.Text;
-                //cmd.Connection = conex;
-                MySqlDataReader data = cmd.ExecuteReader();
-                if (data.HasRows)
+
+            cmd = conex.CreateCommand();
+            cmd.CommandText = "Select * from cliente where id =" + TBClient.Text;
+            //cmd.Connection = conex;
+            MySqlDataReader data = cmd.ExecuteReader();
+            if (data.HasRows)
+            {
+                while (data.Read())
                 {
-                    while (data.Read())
-                    {
                     String name = data.GetString(1);
                     LBLName.Text = name;
                 }
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LBLNameCheckBox.Text = comboBox1.SelectedItem.
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            String myConex = "Server=localhost;Database=clientes;Uid=root;Pwd=1234;";
+            MySqlConnection conex = new MySqlConnection(myConex);
+
+            MySqlCommand cmd;
+            conex.Open();
+
+            cmd = conex.CreateCommand();
+            cmd.CommandText = "Select * from cliente";
+
+            MySqlDataReader data = cmd.ExecuteReader();
+            if (data.HasRows)
+            {
+                while (data.Read())
+                {
+                    comboBox1.Items.Add(data.GetInt32(0));
+                    LBLNameCheckBox.Text = data.GetString(1);
                 }
-                
+            }
         }
     }
 }

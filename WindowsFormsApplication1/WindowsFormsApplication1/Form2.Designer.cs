@@ -34,6 +34,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.LBLName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LBLID = new System.Windows.Forms.Label();
+            this.LBLNameCheckBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TBClient
@@ -56,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 100);
+            this.label2.Location = new System.Drawing.Point(29, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 2;
@@ -75,11 +79,10 @@
             // LBLName
             // 
             this.LBLName.AutoSize = true;
-            this.LBLName.Location = new System.Drawing.Point(145, 100);
+            this.LBLName.Location = new System.Drawing.Point(142, 90);
             this.LBLName.Name = "LBLName";
-            this.LBLName.Size = new System.Drawing.Size(79, 13);
+            this.LBLName.Size = new System.Drawing.Size(0, 13);
             this.LBLName.TabIndex = 6;
-            this.LBLName.Text = "Nombre Cliente";
             this.LBLName.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
@@ -92,11 +95,50 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(32, 131);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(76, 21);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(142, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "ID:";
+            // 
+            // LBLID
+            // 
+            this.LBLID.AutoSize = true;
+            this.LBLID.Location = new System.Drawing.Point(170, 138);
+            this.LBLID.Name = "LBLID";
+            this.LBLID.Size = new System.Drawing.Size(0, 13);
+            this.LBLID.TabIndex = 10;
+            // 
+            // LBLNameCheckBox
+            // 
+            this.LBLNameCheckBox.AutoSize = true;
+            this.LBLNameCheckBox.Location = new System.Drawing.Point(177, 138);
+            this.LBLNameCheckBox.Name = "LBLNameCheckBox";
+            this.LBLNameCheckBox.Size = new System.Drawing.Size(13, 13);
+            this.LBLNameCheckBox.TabIndex = 11;
+            this.LBLNameCheckBox.Text = "n";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.LBLNameCheckBox);
+            this.Controls.Add(this.LBLID);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LBLName);
             this.Controls.Add(this.button2);
@@ -105,6 +147,7 @@
             this.Controls.Add(this.TBClient);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +161,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label LBLName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LBLID;
+        private System.Windows.Forms.Label LBLNameCheckBox;
     }
 }
