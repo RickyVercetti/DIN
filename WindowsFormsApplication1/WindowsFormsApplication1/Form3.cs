@@ -30,13 +30,19 @@ namespace WindowsFormsApplication1
 
             MySqlCommand cmd;
             conex.Open();
-
-            cmd = conex.CreateCommand();
-            cmd.CommandText = "INSERT into cliente (id,name) VALUES('"+textID.Text+"','"+textName.Text+"')";
-            //cmd.Connection = conex;
-            cmd.ExecuteNonQuery();
-
-            MessageBox.Show("Introducido correctamente!");
+            try
+            {
+                cmd = conex.CreateCommand();
+                cmd.CommandText = "INSERT into cliente (id,name) VALUES('" + textID.Text + "','" + textName.Text + "')";
+                //cmd.Connection = conex;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Introducido correctamente!");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al introducir el nuevo Cliente");
+            }
+            
         }
     }
 }
